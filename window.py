@@ -33,3 +33,7 @@ class Window(Gtk.ApplicationWindow):
     @Gtk.Template.Callback("on_button_forward_clicked")
     def forward(self, widget):
         self.webview.go_forward()
+
+    @Gtk.Template.Callback("on_button_compose_clicked")
+    def forward(self, widget):
+        self.webview.load_uri("https://mobile.twitter.com/compose/tweet")
